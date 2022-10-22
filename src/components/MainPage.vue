@@ -46,12 +46,7 @@ export default {
         placeholder="digite pokemon"
         ref="inputField"
       />
-      <div id="example-1">
-        <button @click="handleSubmit">Pesquise</button>
-        <!-- <p>você digitou {{ message }}</p>
-        <p>name {{ pokemonData?.sprites?.front_default }}</p>
-        <p>specie {{ pokemonData.url }}</p> -->
-      </div>
+      <button @click="handleSubmit">Pesquisar</button>
       <div>
         <PokemonCard
           v-if="`${pokemon}`"
